@@ -1,0 +1,34 @@
+{
+  "name": "genpark-viktor-task-executor-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Viktor-like AI coworker that executes tasks autonomously rather than just assisting.",
+  "author": "genpark",
+  "category": "agentic",
+  "tags": [
+    "coworker",
+    "execution",
+    "autonomous",
+    "viktor"
+  ],
+  "inputs": {
+    "task_description": {
+      "type": "string"
+    },
+    "tools_available": {
+      "type": "array"
+    }
+  },
+  "outputs": {
+    "execution_steps": {
+      "type": "array"
+    },
+    "artifacts": {
+      "type": "array"
+    },
+    "completion_status": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
